@@ -1,0 +1,42 @@
+%====================================================
+% 10 Comparison of Optimizers
+%====================================================
+
+\section{Comparison of Optimizers}
+
+The optimizer is responsible for updating the network weights during the training process by minimizing the loss function. Different optimization algorithms influence the convergence speed, learning stability, and final classification accuracy of a Convolutional Neural Network (CNN). In this experiment, the Adam optimizer (Model 1) was compared with the Stochastic Gradient Descent (SGD) optimizer (Model 4).
+
+Both models used the same CNN architecture consisting of two convolution layers with a $3\times3$ kernel size, ReLU activation function, and a fully connected layer containing 128 neurons. Therefore, the only difference between the two models is the optimization algorithm used during training.
+
+The comparison results are presented in Table~\ref{tab:optimizercomparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Optimizers}\label{tab:optimizercomparison}
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Parameter} & \textbf{Model 1} & \textbf{Model 4} \\
+\midrule
+Optimizer & Adam & SGD\\
+Convolution Layers & 2 & 2\\
+Kernel Size & $3\times3$ & $3\times3$\\
+Activation Function & ReLU & ReLU\\
+Dense Neurons & 128 & 128\\
+Parameters & 225,034 & 225,034\\
+Test Accuracy & 0.9907 & 0.9794\\
+Test Loss & 0.0374 & 0.0621\\
+Training Time (s) & 209.29 & 125.35\\
+Misclassified Images & 93 & 206\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The experimental results indicate that the Adam optimizer significantly outperformed the SGD optimizer for handwritten digit recognition. Model 1 achieved a testing accuracy of 99.07\%, whereas Model 4 obtained a lower accuracy of 97.94\%. Similarly, the testing loss increased from 0.0374 with Adam to 0.0621 when SGD was used.
+
+Another notable difference is the number of incorrectly classified images. Model 1 misclassified only 93 testing images, while Model 4 misclassified 206 images, which is more than twice the number of classification errors.
+
+Although the SGD optimizer required a shorter training time of approximately 125.35 seconds compared to 209.29 seconds for Adam, the reduction in computational time came at the expense of a noticeable decrease in classification performance. Adam converged more effectively because it adaptively adjusts the learning rate for each parameter during optimization.
+
+Overall, the experimental results demonstrate that the Adam optimizer provides superior learning capability, lower testing loss, higher classification accuracy, and fewer prediction errors than the SGD optimizer. Therefore, Adam is the more suitable optimization algorithm for the CNN-based handwritten digit recognition system developed in this assignment.

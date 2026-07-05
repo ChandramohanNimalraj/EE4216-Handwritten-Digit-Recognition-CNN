@@ -1,0 +1,43 @@
+%====================================================
+% 13 Accuracy and Loss Graphs
+%====================================================
+
+\section{Accuracy and Loss Graphs}
+
+The training and validation curves provide valuable insight into the learning behaviour of the Convolutional Neural Network (CNN) during the training process. These curves illustrate how the model accuracy and loss changed over successive training epochs and help determine whether the network converged successfully or exhibited signs of underfitting or overfitting.
+
+For each CNN model, the training process was carried out for ten epochs using the MNIST dataset. The corresponding training accuracy, validation accuracy, training loss, and validation loss were recorded after every epoch.
+
+\subsection{Training and Validation Accuracy}
+
+Figure~\ref{fig:accuracycurve} illustrates the training and validation accuracy obtained during CNN training.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{accuracy_3graph.png}
+\caption{Training and validation accuracy of the CNN model.}\label{fig:accuracycurve}
+\end{figure}
+
+The accuracy curve shows a rapid increase during the initial epochs, indicating that the CNN successfully learned the important visual features of the handwritten digits. As training progressed, both the training accuracy and validation accuracy gradually converged and stabilized at values close to 99\%.
+
+The small difference between the training and validation accuracy suggests that the CNN generalized well to unseen data without significant overfitting.
+
+\subsection{Training and Validation Loss}
+
+Figure~\ref{fig:losscurve} presents the training and validation loss throughout the training process.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{loss_3graph.png}
+\caption{Training and validation loss of the CNN model.}\label{fig:losscurve}
+\end{figure}
+
+The loss curves demonstrate a continuous decrease throughout the training process, confirming that the optimization algorithm successfully minimized the classification error. Most of the reduction occurred during the first few epochs, after which the loss gradually approached a stable minimum.
+
+The validation loss closely followed the training loss, indicating that the trained model maintained good generalization performance and did not exhibit noticeable overfitting.
+
+\subsection{Learning Behaviour}
+
+The training and validation curves demonstrate that the selected CNN architecture converged efficiently within ten training epochs. The combination of convolution layers, max-pooling layers, the Adam optimizer, and the chosen activation functions enabled the network to extract meaningful image features while maintaining stable learning behaviour.
+
+The high training accuracy, low validation loss, and minimal gap between the training and validation curves indicate that the developed CNN achieved effective learning and reliable handwritten digit classification performance on the MNIST dataset.

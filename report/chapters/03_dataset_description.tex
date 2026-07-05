@@ -1,0 +1,52 @@
+%====================================================
+% 03 Dataset Description
+%====================================================
+
+\section{Dataset Description}
+
+The performance of any deep learning model depends heavily on the quality and characteristics of the dataset used during training and evaluation. In this assignment, the Modified National Institute of Standards and Technology (MNIST) handwritten digit dataset was selected because it is one of the most widely used benchmark datasets for image classification and handwritten digit recognition research\cite{lecun1998gradient}.
+
+The MNIST dataset contains grayscale images representing handwritten digits from 0 to 9. It was developed by modifying the original NIST Special Database 19 and has become a standard benchmark for evaluating machine learning and deep learning algorithms. The dataset contains handwritten digits collected from numerous writers with different writing styles, providing sufficient variability for training and testing classification models.
+
+The complete dataset consists of 70,000 grayscale images with a spatial resolution of $28 \times 28$ pixels. These images are divided into two subsets:
+
+\begin{itemize}
+    \item \textbf{Training Dataset:} 60,000 handwritten digit images
+    \item \textbf{Testing Dataset:} 10,000 handwritten digit images
+\end{itemize}
+
+Each image belongs to one of ten numerical classes representing the digits from 0 to 9. Every pixel has an intensity value ranging from 0 to 255, where 0 represents a black pixel and 255 represents a white pixel. Before training the CNN models, these pixel values were normalized to improve convergence during the optimization process.
+
+The MNIST dataset was directly loaded using the TensorFlow Keras dataset library, eliminating the need for manual downloading or preprocessing of the original image files. Figure~\ref{fig:mnist_samples} illustrates several sample handwritten digit images extracted from the training dataset.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{sample_mnist.png}
+\caption{Sample handwritten digit images from the MNIST dataset.}\label{fig:mnist_samples}
+\end{figure}
+
+Table~\ref{tab:mnist_summary} summarizes the main characteristics of the MNIST dataset used throughout this assignment.
+
+\begin{table}[H]
+\centering
+\caption{Summary of the MNIST Dataset}\label{tab:mnist_summary}
+\begin{tabular}{ll}
+\toprule
+\textbf{Property} & \textbf{Description} \\
+\midrule
+Dataset Name & MNIST Handwritten Digit Dataset \\
+Number of Classes & 10 (Digits 0--9) \\
+Total Images & 70,000 \\
+Training Images & 60,000 \\
+Testing Images & 10,000 \\
+Image Size & $28 \times 28$ pixels \\
+Image Type & Grayscale \\
+Pixel Value Range & 0--255 \\
+Framework Used & TensorFlow Keras Dataset API \\
+Application & Handwritten Digit Recognition \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The MNIST dataset was selected because it provides a balanced, well-labeled, and standardized benchmark for evaluating image classification algorithms. Its moderate size enables efficient CNN training while still containing sufficient variability to evaluate the ability of different network architectures to generalize to unseen handwritten digits. Consequently, it is an ideal dataset for comparing multiple CNN configurations and assessing their effectiveness in handwritten digit recognition.

@@ -1,0 +1,15 @@
+%====================================================
+% 18 Conclusion
+%====================================================
+
+\section{Conclusion}
+
+This assignment successfully developed and evaluated a handwritten digit recognition system using Convolutional Neural Networks (CNNs) and the MNIST handwritten digit dataset. The complete implementation included dataset preprocessing, CNN model development, model training, performance evaluation, and testing using custom handwritten digit images.
+
+Five different CNN architectures were designed and compared by modifying key network parameters, including the convolution kernel size, the number of convolution layers, the optimization algorithm, and the activation function. The performance of each model was evaluated using testing accuracy, testing loss, training time, confusion matrix analysis, and misclassification analysis.
+
+Among the evaluated models, Model 3, which incorporated an additional convolution layer, achieved the highest testing accuracy of 99.11\% while producing the fewest misclassified images. The comparison also demonstrated that the Adam optimizer provided superior learning performance compared with the SGD optimizer, while the standard $3\times3$ convolution kernel remained highly effective for handwritten digit feature extraction. Furthermore, both ReLU and Tanh activation functions produced excellent classification performance under the experimental conditions.
+
+The trained CNN model was further validated using custom handwritten digit images. The successful prediction of these images confirmed that the developed model generalized well beyond the original MNIST dataset and was capable of accurately recognizing independently created handwritten digits after appropriate image preprocessing.
+
+Overall, the experimental results demonstrate that Convolutional Neural Networks provide an accurate, reliable, and computationally efficient solution for handwritten digit recognition. The comparative analysis also highlights the importance of carefully selecting CNN architectural parameters to achieve an optimal balance between classification accuracy, model complexity, and computational efficiency. The knowledge and practical experience gained through this assignment provide a strong foundation for applying deep learning techniques to more advanced image classification and computer vision applications.

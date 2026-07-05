@@ -1,0 +1,42 @@
+%====================================================
+% 11 Comparison of Activation Functions
+%====================================================
+
+\section{Comparison of Activation Functions}
+
+Activation functions introduce non-linearity into a Convolutional Neural Network (CNN), enabling the network to learn complex patterns from image data. The choice of activation function significantly influences the convergence speed, feature learning capability, and overall classification performance of the model. In this experiment, the Rectified Linear Unit (ReLU) activation function used in Model 1 was compared with the Hyperbolic Tangent (Tanh) activation function implemented in Model 5.
+
+Both models employed the same CNN architecture consisting of two convolution layers with a $3\times3$ kernel size, the Adam optimizer, and a fully connected layer containing 128 neurons. Therefore, the only difference between the two models is the activation function used within the convolutional and dense layers.
+
+The comparison results are presented in Table~\ref{tab:activationcomparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Activation Functions}\label{tab:activationcomparison}
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Parameter} & \textbf{Model 1} & \textbf{Model 5} \\
+\midrule
+Activation Function & ReLU & Tanh\\
+Convolution Layers & 2 & 2\\
+Kernel Size & $3\times3$ & $3\times3$\\
+Optimizer & Adam & Adam\\
+Dense Neurons & 128 & 128\\
+Parameters & 225,034 & 225,034\\
+Test Accuracy & 0.9907 & 0.9907\\
+Test Loss & 0.0374 & 0.0363\\
+Training Time (s) & 209.29 & 112.63\\
+Misclassified Images & 93 & 93\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The experimental results show that both activation functions achieved identical testing accuracy of 99.07\%, indicating that both ReLU and Tanh are capable of learning highly discriminative features for handwritten digit recognition on the MNIST dataset.
+
+Although the classification accuracy remained the same, Model 5 produced a slightly lower testing loss of 0.0363 compared with 0.0374 for Model 1. In addition, Model 5 required only 112.63 seconds for training, whereas Model 1 required 209.29 seconds. Both models also produced the same number of misclassified images (93), demonstrating comparable prediction capability.
+
+The similar performance of the two activation functions suggests that the MNIST handwritten digit classification problem is relatively simple for modern CNN architectures. While ReLU is generally preferred because of its computational efficiency and ability to reduce the vanishing gradient problem, the Tanh activation function also demonstrated excellent classification performance under the experimental conditions used in this study.
+
+Overall, both activation functions provided highly accurate handwritten digit recognition. Based on the experimental results, Tanh achieved a slightly lower testing loss and shorter training time while maintaining the same classification accuracy. However, ReLU remains a widely adopted activation function in deep learning because of its simplicity, computational efficiency, and consistent performance across a wide range of image classification tasks.

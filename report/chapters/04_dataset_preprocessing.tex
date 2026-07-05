@@ -1,0 +1,110 @@
+%====================================================
+% 04 Dataset Preprocessing
+%====================================================
+
+\section{Dataset Preprocessing}
+
+Before training the Convolutional Neural Network (CNN), the MNIST dataset was preprocessed to convert the raw image data into a standardized format suitable for deep learning. Data preprocessing is an essential stage in any machine learning workflow because it improves numerical stability, accelerates model convergence, and enhances classification performance\cite{goodfellow2016deep,geron2023}.
+
+The preprocessing pipeline used in this assignment consisted of four main stages: loading the dataset, verifying the sample images, normalizing the pixel values, and reshaping the image dimensions to satisfy the input requirements of the CNN models. The same preprocessing procedure was applied to all five CNN architectures to ensure a fair performance comparison.
+
+%----------------------------------------------------
+\subsection{Loading the MNIST Dataset}
+
+The MNIST dataset was loaded using the built-in \texttt{mnist.load\_data ()} function provided by the TensorFlow Keras library. This function automatically downloads the dataset if it is not already available and separates it into training and testing subsets.
+
+The dataset contains:
+
+\begin{itemize}
+    \item 60,000 training images with their corresponding labels.
+    \item 10,000 testing images with their corresponding labels.
+\end{itemize}
+
+The dimensions of the dataset were verified immediately after loading to ensure that all images and labels had been imported correctly before further processing\cite{tensorflow2015}.
+
+%----------------------------------------------------
+\subsection{Displaying Sample Images}
+
+Several handwritten digit images from the training dataset were displayed to verify that the dataset had been loaded successfully and to observe the variation in handwriting styles. As illustrated in Figure~\ref{fig:mnist_samples} (presented in Chapter 3), although each digit is written differently by different individuals, every image maintains a fixed resolution of $28 \times 28$ pixels. This standardized image size enables consistent feature extraction during CNN training.
+
+%----------------------------------------------------
+\subsection{Normalization of Pixel Values}
+
+Each pixel in the original MNIST images has an intensity value ranging from 0 to 255. Since neural networks generally perform better when the input features are scaled to a smaller numerical range, all pixel values were normalized to the interval between 0 and 1.
+
+The normalization process is expressed as
+
+\begin{equation}
+x_{\mathrm{normalized}}=\frac{x}{255}
+\end{equation}
+
+where
+
+\begin{itemize}
+    \item $x$ represents the original pixel value.
+    \item $x_{\mathrm{normalized}}$ represents the normalized pixel value.
+\end{itemize}
+
+After normalization, the minimum pixel value became 0.0 while the maximum pixel value became 1.0. This scaling reduces numerical instability during optimization and improves the convergence speed of the learning algorithm\cite{goodfellow2016deep}.
+
+%----------------------------------------------------
+\subsection{Reshaping the Dataset}
+
+Initially, every handwritten digit image had a dimension of
+
+\[
+28 \times 28
+\]
+
+representing the image height and width.
+
+However, convolutional neural networks require an additional channel dimension that specifies the number of image channels. Since the MNIST dataset consists of grayscale images, each image contains only one channel.
+
+Therefore, every image was reshaped into
+
+\[
+28 \times 28 \times 1
+\]
+
+The reshaping operation can be represented as
+
+\begin{equation}
+X \in \mathbb{R}^{60000 \times 28 \times 28}
+\rightarrow
+X \in \mathbb{R}^{60000 \times 28 \times 28 \times 1}
+\end{equation}
+
+where the additional dimension represents the grayscale image channel.
+
+Consequently, the final dataset dimensions became
+
+\begin{itemize}
+    \item Training dataset: $(60000,\;28,\;28,\;1)$
+    \item Testing dataset: $(10000,\;28,\;28,\;1)$
+\end{itemize}
+
+These dimensions satisfy the input requirements of all CNN architectures developed in this assignment.
+
+%----------------------------------------------------
+\subsection{Summary of the Preprocessing Steps}
+
+Table~\ref{tab:preprocessing_summary} summarizes the preprocessing operations performed before CNN training.
+
+\begin{table}[H]
+\centering
+\caption{Summary of Dataset Preprocessing Steps}\label{tab:preprocessing_summary}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Preprocessing Step} & \textbf{Purpose} \\
+\midrule
+Load Dataset & Import MNIST images and labels \\
+Display Sample Images & Verify successful dataset loading \\
+Normalize Pixel Values & Scale values from 0--255 to 0--1 \\
+Reshape Images & Convert images to $(28,28,1)$ for CNN input \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The preprocessing stage successfully transformed the original MNIST dataset into a standardized format suitable for CNN training. Normalization improved numerical stability during optimization, while reshaping ensured compatibility with convolutional layers. The same preprocessing procedure was consistently applied to all five CNN models, enabling a fair and reliable comparison of their classification performance throughout this assignment.

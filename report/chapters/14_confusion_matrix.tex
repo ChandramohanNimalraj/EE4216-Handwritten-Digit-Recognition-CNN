@@ -1,0 +1,33 @@
+%====================================================
+% 14 Confusion Matrix Analysis
+%====================================================
+
+\section{Confusion Matrix Analysis}
+
+The confusion matrix is one of the most important evaluation tools for multi-class classification problems. It provides a detailed summary of the prediction results by comparing the actual class labels with the predicted class labels. Unlike the overall classification accuracy, the confusion matrix identifies the individual digit classes that are correctly classified as well as those that are misclassified.
+
+In this study, a confusion matrix was generated using the best-performing CNN model (Model 3) after evaluating the trained network on the MNIST testing dataset. The matrix contains ten rows and ten columns corresponding to the handwritten digits from 0 to 9.
+
+\subsection{Confusion Matrix}
+
+Figure~\ref{fig:confusionmatrix} illustrates the confusion matrix obtained from the trained CNN model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.80\textwidth]{confusion_3matrix.png}
+\caption{Confusion matrix of the best-performing CNN model evaluated using the MNIST testing dataset.}\label{fig:confusionmatrix}
+\end{figure}
+
+The diagonal elements of the confusion matrix represent correctly classified handwritten digits, whereas the off-diagonal elements indicate incorrect classifications. A larger concentration of values along the main diagonal demonstrates that the CNN accurately classified the majority of the testing images.
+
+Only a small number of handwritten digits were incorrectly predicted. Most classification errors occurred between visually similar digits such as 3 and 5, 4 and 9, or 7 and 9. These errors are expected because some handwritten samples contain irregular writing styles that closely resemble other digit classes.
+
+\subsection{Performance Interpretation}
+
+The confusion matrix confirms that the proposed CNN model achieved excellent classification performance across all ten digit classes. The high concentration of correctly classified samples along the diagonal indicates that the convolutional layers successfully extracted meaningful spatial features from the handwritten images.
+
+The small number of off-diagonal elements demonstrates that the trained CNN generalized well to unseen testing data and maintained consistent classification performance across different handwritten styles.
+
+The confusion matrix also complements the overall testing accuracy by providing class-wise performance analysis. Although the overall testing accuracy exceeded 99\%, the confusion matrix reveals the specific digit pairs that occasionally produced prediction errors, providing valuable insight into the strengths and limitations of the developed handwritten digit recognition system.
+
+Overall, the confusion matrix validates the effectiveness of the proposed CNN architecture for handwritten digit recognition and confirms that the trained model provides highly reliable multi-class classification performance on the MNIST dataset.

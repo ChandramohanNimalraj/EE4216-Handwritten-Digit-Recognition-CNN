@@ -1,0 +1,42 @@
+%====================================================
+% 09 Comparison of Convolution Layers
+%====================================================
+
+\section{Comparison of Convolution Layers}
+
+The number of convolutional layers directly affects the feature extraction capability of a Convolutional Neural Network (CNN). Increasing the number of convolution layers enables the network to learn more complex and hierarchical image features. In this experiment, the performance of a CNN with two convolution layers (Model 1) was compared with a CNN containing three convolution layers (Model 3).
+
+Both models used the same $3\times3$ kernel size, Adam optimizer, ReLU activation function, and a fully connected layer with 128 neurons. Therefore, the only architectural difference between the two models is the addition of an extra convolutional layer in Model 3.
+
+The comparison results are summarized in Table~\ref{tab:convcomparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Convolution Layers}\label{tab:convcomparison}
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Parameter} & \textbf{Model 1} & \textbf{Model 3} \\
+\midrule
+Convolution Layers & 2 & 3\\
+Kernel Size & $3\times3$ & $3\times3$\\
+Optimizer & Adam & Adam\\
+Activation Function & ReLU & ReLU\\
+Dense Neurons & 128 & 128\\
+Parameters & 225,034 & 241,546\\
+Test Accuracy & 0.9907 & 0.9911\\
+Test Loss & 0.0374 & 0.0368\\
+Training Time (s) & 209.29 & 135.16\\
+Misclassified Images & 93 & 89\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The experimental results show that adding an additional convolution layer slightly improved the overall classification performance. Model 3 achieved the highest testing accuracy of 99.11\%, compared with 99.07\% for the baseline model. Furthermore, the testing loss decreased from 0.0374 to 0.0368, while the number of misclassified images reduced from 93 to 89.
+
+Although Model 3 contains a larger number of trainable parameters (241,546 compared with 225,034), the increase in model complexity enabled more effective extraction of high-level image features. This resulted in improved classification accuracy and better generalization on the MNIST testing dataset.
+
+The recorded training time for Model 3 was also lower than that of the baseline model. This variation is likely due to differences in system execution conditions rather than the network architecture itself, as training time may vary depending on processor utilization and software scheduling.
+
+Overall, the experimental results indicate that increasing the number of convolution layers improves feature learning and classification performance. Among the two architectures, the three-layer CNN demonstrated the best overall recognition accuracy while maintaining a reasonable computational cost, making it the preferred architecture for handwritten digit recognition.

@@ -1,0 +1,89 @@
+%====================================================
+% 12 Training and Validation Results
+%====================================================
+
+\section{Training and Validation Results}
+
+This chapter presents the performance evaluation of the five Convolutional Neural Network (CNN) models developed for handwritten digit recognition using the MNIST dataset. The models were evaluated based on testing accuracy, testing loss, training time, and the number of misclassified images. In addition, graphical comparisons are presented to illustrate the effect of different architectural modifications on the overall performance of the CNN
+
+\subsection{Overall Performance Comparison}
+
+Table~\ref{tab:overallcomparison} summarizes the experimental results obtained from the five CNN models.
+
+\begin{table}[H]
+\centering
+\caption{Overall Performance Comparison of CNN Models}\label{tab:overallcomparison}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Model} &
+\textbf{Conv.} &
+\textbf{Kernel} &
+\textbf{Optimizer} &
+\textbf{Activation} &
+\textbf{Accuracy} &
+\textbf{Loss} &
+\textbf{Time (s)} &
+\textbf{Misclassified} \\
+\midrule
+
+Model 1 & 2 & $3\times3$ & Adam & ReLU & 0.9907 & 0.0374 & 209.29 & 93 \\
+
+Model 2 & 2 & $5\times5$ & Adam & ReLU & 0.9904 & 0.0411 & 145.20 & 96 \\
+
+Model 3 & 3 & $3\times3$ & Adam & ReLU & 0.9911 & 0.0368 & 135.16 & 89 \\
+
+Model 4 & 2 & $3\times3$ & SGD & ReLU & 0.9794 & 0.0621 & 125.35 & 206 \\
+
+Model 5 & 2 & $3\times3$ & Adam & Tanh & 0.9907 & 0.0363 & 112.63 & 93 \\
+
+\bottomrule
+\end{tabular}
+}
+
+\end{table}
+
+The comparison shows that all CNN models achieved high classification performance, with testing accuracies greater than 97\%. Among the evaluated architectures, Model 3 achieved the highest testing accuracy (99.11\%), while Model 5 produced the lowest testing loss (0.0363). Model 4 recorded the lowest accuracy because the SGD optimizer converged more slowly than the Adam optimizer.
+
+\subsection{Accuracy Comparison}
+
+Figure~\ref{fig:accuracycomparison} compares the testing accuracy achieved by each CNN model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{accuracy_comparison_graph.png}
+\caption{Comparison of testing accuracy for the five CNN models.}\label{fig:accuracycomparison}
+\end{figure}
+
+The accuracy comparison indicates that Models 1, 2, 3, and 5 all achieved excellent classification performance, with only minor differences in testing accuracy. Model 3 achieved the highest accuracy because the additional convolution layer enabled the extraction of richer image features.
+
+\subsection{Loss Comparison}
+
+Figure~\ref{fig:losscomparison} presents the testing loss obtained by each CNN model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{loss_comparison_graph.png}
+\caption{Comparison of testing loss for the five CNN models.}\label{fig:losscomparison}
+\end{figure}
+
+The loss comparison demonstrates that Model 5 achieved the lowest testing loss, indicating slightly better confidence in its predictions. In contrast, Model 4 produced the highest testing loss because the SGD optimizer converged less effectively than Adam under the same training conditions.
+
+\subsection{Training Time Comparison}
+
+Figure~\ref{fig:trainingcomparison} illustrates the total training time required for each CNN model.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{training_time_comparison_graph.png}
+\caption{Comparison of training time for the five CNN models.}\label{fig:trainingcomparison}
+\end{figure}
+
+The training time comparison shows that Model 5 required the shortest training time, whereas Model 1 required the longest. Although Model 3 contained an additional convolution layer, its training time remained relatively low, demonstrating that the increased model complexity did not significantly increase the computational cost under the experimental conditions.
+
+\subsection{Discussion}
+
+The experimental evaluation demonstrates that modifying different CNN components influences model performance in different ways. Increasing the convolution kernel size produced only a small change in classification accuracy, while adding an additional convolution layer resulted in the highest testing accuracy. Replacing the Adam optimizer with SGD significantly reduced classification performance, highlighting the importance of selecting an appropriate optimization algorithm. Changing the activation function from ReLU to Tanh produced similar classification accuracy while slightly reducing the testing loss and training time.
+
+Overall, Model 3 provided the best balance between classification accuracy and feature extraction capability, whereas Model 5 achieved the lowest testing loss and the shortest training time. These results confirm that CNN architecture design has a measurable impact on handwritten digit recognition performance.

@@ -1,0 +1,10 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Sample handwritten digit images from the MNIST dataset.}}{7}{figure.caption.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Baseline CNN model summary generated using TensorFlow Keras.}}{14}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of testing accuracy for the five CNN models.}}{29}{figure.caption.15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of testing loss for the five CNN models.}}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of training time for the five CNN models.}}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Training and validation accuracy of the CNN model.}}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Training and validation loss of the CNN model.}}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Confusion matrix of the best-performing CNN model evaluated using the MNIST testing dataset.}}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Examples of misclassified handwritten digits predicted by the CNN model.}}{35}{figure.caption.21}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Prediction results for custom handwritten digit images using the trained CNN model.}}{37}{figure.caption.22}%

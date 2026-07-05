@@ -1,0 +1,40 @@
+%====================================================
+% 08 Comparison of Kernel Sizes
+%====================================================
+
+\section{Comparison of Kernel Sizes}
+
+One of the most important design parameters in a Convolutional Neural Network (CNN) is the convolution kernel size. The kernel determines the receptive field used to extract image features from the input. In this experiment, the effect of changing the convolution kernel size from $3\times3$ to $5\times5$ was investigated while keeping all other network parameters unchanged.
+
+Model 1 employed two convolutional layers with a kernel size of $3\times3$, whereas Model 2 used two convolutional layers with a larger kernel size of $5\times5$. Both models utilized the Adam optimizer, ReLU activation function, two max-pooling layers, and a fully connected layer containing 128 neurons. Therefore, any performance difference can be attributed solely to the change in kernel size.
+
+The experimental results are summarized in Table~\ref{tab:kernelcomparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Kernel Sizes}\label{tab:kernelcomparison}
+
+\begin{tabular}{lcc}
+\toprule
+\textbf{Parameter} & \textbf{Model 1} & \textbf{Model 2} \\
+\midrule
+Kernel Size & $3\times3$ & $5\times5$\\
+Convolution Layers & 2 & 2\\
+Optimizer & Adam & Adam\\
+Activation Function & ReLU & ReLU\\
+Dense Neurons & 128 & 128\\
+Parameters & 225,034 & 184,586\\
+Test Accuracy & 0.9907 & 0.9904\\
+Test Loss & 0.0374 & 0.0411\\
+Training Time (s) & 209.29 & 145.20\\
+Misclassified Images & 93 & 96\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+The results indicate that both kernel sizes produced very similar classification performance. The $3\times3$ kernel achieved a slightly higher testing accuracy (99.07\%) compared with the $5\times5$ kernel (99.04\%). In addition, the smaller kernel produced a lower testing loss and fewer misclassified images.
+
+Although the $5\times5$ kernel reduced the number of trainable parameters and completed training faster, its classification accuracy was marginally lower than the baseline model. This suggests that the smaller convolution kernel extracts fine local features more effectively for handwritten digit recognition on the MNIST dataset.
+
+Overall, the experimental results demonstrate that the standard $3\times3$ convolution kernel provides a better balance between feature extraction capability and classification accuracy for this application. Consequently, the $3\times3$ kernel is selected as the preferred configuration for the remaining CNN models investigated in this study.

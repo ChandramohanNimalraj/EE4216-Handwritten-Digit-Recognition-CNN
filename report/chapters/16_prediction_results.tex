@@ -1,0 +1,29 @@
+%====================================================
+% 16 Prediction Results
+%====================================================
+
+\section{Prediction Results}
+
+After training and evaluating the Convolutional Neural Network (CNN) using the MNIST dataset, the final stage of the experiment involved testing the trained model with custom handwritten digit images. These images were manually created and stored in the \texttt{handwritten} folder before being processed by the CNN
+
+The custom handwritten images were first converted to grayscale, inverted to match the MNIST image format, thresholded to remove background noise, cropped around the handwritten digit, resized to $20\times20$ pixels, padded to produce a final image size of $28\times28$ pixels, normalized, and finally reshaped into the input format required by the CNN
+
+The trained CNN then predicted the digit represented by each handwritten image.
+
+\subsection{Prediction Results}
+
+Figure~\ref{fig:customprediction} shows the prediction results obtained from the custom handwritten digit images.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{custom_3predictions.png}
+\caption{Prediction results for custom handwritten digit images using the trained CNN model.}\label{fig:customprediction}
+\end{figure}
+
+Each image displays the handwritten digit together with the corresponding digit predicted by the CNN The prediction results demonstrate that the trained network successfully recognized the majority of the custom handwritten samples.
+
+The successful recognition of user-generated handwritten digits indicates that the CNN learned generalized image features rather than simply memorizing the MNIST training dataset. The preprocessing steps applied before prediction ensured that the custom images closely matched the characteristics of the MNIST dataset, allowing the trained CNN to classify them accurately.
+
+Although handwriting styles vary significantly between individuals, the CNN demonstrated excellent robustness by correctly identifying handwritten digits with different stroke thicknesses, writing styles, and digit shapes. Minor prediction errors may occur when the handwritten digit is poorly written, contains excessive background noise, or differs substantially from the handwriting patterns represented in the training dataset.
+
+Overall, the prediction results confirm that the developed CNN model is capable of accurately recognizing both benchmark MNIST images and independently created handwritten digit images. This demonstrates the practical applicability of the proposed handwritten digit recognition system for real-world handwritten digit classification tasks.

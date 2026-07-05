@@ -1,0 +1,19 @@
+%====================================================
+% 01 Introduction
+%====================================================
+
+\section{Introduction}
+
+Handwritten digit recognition is one of the most widely studied applications of image processing and deep learning. It has significant practical importance in numerous real-world applications, including postal mail sorting, bank cheque processing, automatic form recognition, document digitization, and optical character recognition (OCR). The primary objective of handwritten digit recognition is to accurately classify handwritten numerical digits despite variations in writing style, size, orientation, and stroke thickness.
+
+Traditional machine learning techniques require manual feature extraction before classification, making them less effective when dealing with complex image patterns. In contrast, Convolutional Neural Networks (CNNs) automatically learn hierarchical image features directly from raw pixel data through multiple convolution and pooling operations. This capability has made CNNs one of the most successful deep learning architectures for image classification tasks.
+
+The MNIST handwritten digit dataset has become the standard benchmark for evaluating handwritten digit recognition systems. It consists of 70,000 grayscale images of handwritten digits ranging from 0 to 9, where each image has a resolution of $28 \times 28$ pixels. The dataset is divided into 60,000 training images and 10,000 testing images, providing an ideal platform for developing and evaluating CNN-based image classification models.
+
+In this assignment, five different CNN architectures were designed and implemented using TensorFlow and Keras in Python. Each model investigates the influence of a specific architectural parameter, including convolution kernel size, number of convolution layers, optimization algorithm, and activation function. These models were trained using the MNIST dataset and evaluated using testing accuracy, testing loss, confusion matrix analysis, misclassification analysis, and custom handwritten digit prediction.
+
+A comparative analysis was performed to investigate the effect of different CNN configurations on classification performance, computational complexity, and training behaviour. The best-performing model was identified based on its overall recognition accuracy, prediction reliability, and computational efficiency.
+
+Finally, the trained CNN model was validated using independently created handwritten digit images. The successful prediction of these custom images demonstrates the ability of the developed system to generalize beyond the benchmark dataset and accurately recognize handwritten digits under practical conditions.
+
+The outcomes of this assignment provide a comprehensive understanding of CNN-based image classification, model evaluation, and comparative analysis while demonstrating the effectiveness of deep learning techniques for handwritten digit recognition.

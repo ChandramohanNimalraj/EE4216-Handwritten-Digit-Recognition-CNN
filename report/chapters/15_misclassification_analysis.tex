@@ -1,0 +1,35 @@
+%====================================================
+% 15 Misclassification Analysis
+%====================================================
+
+\section{Misclassification Analysis}
+
+Although the proposed Convolutional Neural Network (CNN) achieved a testing accuracy exceeding 99\%, a small number of handwritten digits were still classified incorrectly. Analyzing these misclassified samples provides valuable insight into the limitations of the model and identifies the types of handwritten digits that remain challenging to classify.
+
+The misclassified images were obtained by comparing the predicted digit labels with the corresponding ground truth labels in the MNIST testing dataset. Figure~\ref{fig:misclassified} presents several examples of incorrectly classified handwritten digits produced by the best-performing CNN model (Model 3).
+
+\subsection{Examples of Misclassified Digits}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{misclassified_3images.png}
+\caption{Examples of misclassified handwritten digits predicted by the CNN model.}\label{fig:misclassified}
+\end{figure}
+
+The figure illustrates handwritten digits that were incorrectly recognized by the CNN. For each image, the actual digit label and the predicted digit label are displayed. Most incorrect predictions occurred for digits with similar visual characteristics or unusual handwriting styles.
+
+Several common misclassification patterns were observed during the evaluation process, including:
+
+\begin{itemize}
+    \item Digit 3 being predicted as digit 5.
+    \item Digit 4 being predicted as digit 9.
+    \item Digit 7 being predicted as digit 9.
+    \item Poorly written digits containing incomplete strokes or excessive curvature.
+    \item Digits positioned close to the image boundary or written with irregular thickness.
+\end{itemize}
+
+These errors are expected because handwritten digits can vary significantly in writing style, stroke width, orientation, and shape. Such variations may produce image features that closely resemble those of another digit class, making accurate classification more difficult.
+
+Despite these challenging samples, the CNN correctly classified the vast majority of handwritten digits. The relatively small number of misclassified images demonstrates that the convolutional layers successfully extracted discriminative spatial features while maintaining excellent generalization performance on previously unseen data.
+
+Overall, the misclassification analysis confirms that the proposed CNN model is highly reliable for handwritten digit recognition. The remaining prediction errors are primarily associated with ambiguous handwriting rather than limitations of the CNN architecture itself. Further improvements could be achieved by increasing the training dataset, applying additional data augmentation techniques, or using more advanced CNN architectures with deeper feature extraction capabilities.

@@ -1,0 +1,76 @@
+%====================================================
+% 07 Comparison of CNN Architectures
+%====================================================
+
+\section{Comparison of CNN Architectures}
+
+This study investigated five different Convolutional Neural Network (CNN) architectures for handwritten digit recognition using the MNIST dataset. Each model was designed by modifying a single architectural parameter while keeping the remaining training conditions unchanged. This approach enabled a fair comparison of how individual design choices influence the overall performance of the CNN
+
+The baseline model consisted of two convolutional layers with a kernel size of $3\times3$, the ReLU activation function, the Adam optimizer, and a fully connected layer containing 128 neurons. Subsequent models introduced one architectural modification at a time, including increasing the kernel size, adding an additional convolutional layer, changing the optimizer, and replacing the activation function.
+
+Table~\ref{tab:cnn_comparison} summarizes the architectural characteristics of all five CNN models.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of CNN Architectures}\label{tab:cnn_comparison}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model} &
+\textbf{Conv. Layers} &
+\textbf{Kernel} &
+\textbf{Optimizer} &
+\textbf{Activation} &
+\textbf{Dense} &
+\textbf{Parameters} \\
+\midrule
+
+Model 1 – Baseline &
+2 &
+$3\times3$ &
+Adam &
+ReLU &
+128 &
+225,034 \\
+
+Model 2 – Kernel Size $5\times5$ &
+2 &
+$5\times5$ &
+Adam &
+ReLU &
+128 &
+184,586 \\
+
+Model 3 – Three Convolution Layers &
+3 &
+$3\times3$ &
+Adam &
+ReLU &
+128 &
+241,546 \\
+
+Model 4 – SGD Optimizer &
+2 &
+$3\times3$ &
+SGD &
+ReLU &
+128 &
+225,034 \\
+
+Model 5 – Tanh Activation &
+2 &
+$3\times3$ &
+Adam &
+Tanh &
+128 &
+225,034 \\
+
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The comparison demonstrates that each architectural modification affects the complexity and learning capability of the CNN Increasing the kernel size changes the receptive field of the convolution filters, while adding an additional convolutional layer allows the network to learn more complex hierarchical image features. Replacing the optimizer influences the convergence speed during training, whereas changing the activation function affects the non-linear representation learned by the network.
+
+The architectural differences evaluated in this study provide the foundation for the quantitative performance comparison presented in the following chapters.

@@ -1,0 +1,146 @@
+%====================================================
+% 06 Experimental Setup
+%====================================================
+
+\section{Experimental Setup}
+
+To ensure a fair and consistent comparison among the five Convolutional Neural Network (CNN) models, all experiments were conducted under identical training and evaluation conditions. Only one architectural parameter was modified in each model, while all other training settings remained unchanged. This approach allows the influence of each parameter on handwritten digit classification performance to be evaluated independently.
+
+The CNN models were implemented using Python and TensorFlow Keras within a Jupyter Notebook environment. The complete development process, including dataset preprocessing, model implementation, training, evaluation, and custom handwritten digit prediction, was carried out using Visual Studio Code.
+
+%----------------------------------------------------
+\subsection{Software Environment}
+
+The software tools and libraries used in this assignment are summarized in Table~\ref{tab:software_environment}.
+
+\begin{table}[H]
+\centering
+\caption{Software Environment}\label{tab:software_environment}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Software / Library} & \textbf{Purpose} \\
+\midrule
+Python 3.12 & Programming language \\
+Visual Studio Code & Development environment \\
+Jupyter Notebook & Interactive experimentation \\
+TensorFlow & Deep learning framework \\
+Keras & CNN model development \\
+NumPy & Numerical computation \\
+Matplotlib & Data visualization \\
+OpenCV & Custom image preprocessing \\
+Scikit-learn & Performance evaluation \\
+Pandas & Result comparison tables \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+%----------------------------------------------------
+\subsection{Hardware Environment}
+
+The experiments were executed on a personal computer using CPU-based training. TensorFlow was executed without GPU acceleration.
+
+The hardware configuration is summarized in Table~\ref{tab:hardware_environment}.
+
+\begin{table}[H]
+\centering
+\caption{Hardware Environment}\label{tab:hardware_environment}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Component} & \textbf{Specification} \\
+\midrule
+Processor & Intel/AMD CPU \\
+Memory (RAM) & System RAM available \\
+GPU & Not used (CPU Training) \\
+Operating System & Windows 11 \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+%----------------------------------------------------
+\subsection{Training Configuration}
+
+All CNN models were trained using the same dataset partition and identical hyperparameter settings. Maintaining consistent training conditions ensures that the observed performance differences arise only from the architectural modifications introduced in each model.
+
+The training configuration is summarized in Table~\ref{tab:training_configuration}.
+
+\begin{table}[H]
+\centering
+\caption{CNN Training Configuration}\label{tab:training_configuration}
+
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Training Images & 60,000 \\
+Testing Images & 10,000 \\
+Epochs & 10 \\
+Batch Size & 64 \\
+Validation Split & 0.20 \\
+Loss Function & Sparse Categorical Crossentropy \\
+Output Activation & Softmax \\
+Number of Classes & 10 \\
+Input Image Size & $28 \times 28 \times 1$ \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+
+%----------------------------------------------------
+\subsection{Evaluation Metrics}
+
+The performance of each CNN model was evaluated using several quantitative metrics.
+
+\begin{itemize}
+
+\item Test Accuracy
+\item Test Loss
+\item Training Time
+\item Number of Trainable Parameters
+\item Number of Misclassified Images
+\item Confusion Matrix
+\item Prediction Performance on Custom Handwritten Images
+
+\end{itemize}
+
+The testing accuracy represents the percentage of correctly classified handwritten digits.
+
+The testing loss indicates the prediction error produced by the CNN model.
+
+Training time was recorded to evaluate computational efficiency, while the confusion matrix and misclassification analysis were used to identify common classification errors.
+
+Finally, each trained CNN model was tested using independently created handwritten digit images to assess its generalization capability beyond the MNIST dataset.
+
+%----------------------------------------------------
+\subsection{Experimental Procedure}
+
+The overall experimental procedure adopted in this assignment is summarized below.
+
+\begin{enumerate}
+
+\item Load the MNIST handwritten digit dataset.
+
+\item Preprocess the dataset by normalizing and reshaping the images.
+
+\item Develop the baseline CNN architecture.
+
+\item Create four additional CNN models by modifying one architectural parameter.
+
+\item Compile each CNN model.
+
+\item Train all models using identical training parameters.
+
+\item Evaluate each model using the testing dataset.
+
+\item Generate confusion matrices and identify misclassified images.
+
+\item Test the trained models using custom handwritten digit images.
+
+\item Compare all five CNN models based on classification performance and computational efficiency.
+
+\end{enumerate}
+
+This experimental procedure ensured a consistent evaluation framework for all CNN architectures, allowing the effect of kernel size, network depth, optimization algorithm, and activation function to be assessed objectively.
