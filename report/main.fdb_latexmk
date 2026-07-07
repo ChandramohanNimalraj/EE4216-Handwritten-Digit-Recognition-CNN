@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1783391294.29924 "main.aux" "main.bbl" "main" 1783391297.24751 0
+["bibtex main"] 1783392138.39713 "main.aux" "main.bbl" "main" 1783392220.59775 0
   "./references.bib" 1783267808 4064 7ae2c504155a71198eb67345cd4e5e6f ""
   "C:/Users/ASUS/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1783391296 13183 be9a7be8dbc8d17ed9128d96bd07e9da "pdflatex"
+  "main.aux" 1783392219 13183 be9a7be8dbc8d17ed9128d96bd07e9da "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1783391294.62622 "d:/CNN_Assignment_03/report/main.tex" "main.pdf" "main" 1783391297.24817 0
+["pdflatex"] 1783392217.51476 "d:/CNN_Assignment_03/report/main.tex" "main.pdf" "main" 1783392220.59859 0
   "C:/Users/ASUS/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783047596 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ASUS/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1783254739 24152 e2d74b9b708f84d797e7c63278ca9fb0 ""
   "C:/Users/ASUS/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1783047587 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -135,8 +135,8 @@
   "C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1761901070 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ASUS/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "chapters/01_introduction.tex" 1783266003 2993 4e40c622725d0c1dcdcea14926d258df ""
-  "chapters/02_objectives.tex" 1783266067 2117 70a1d3837bad531d6755fd0a2d2494f2 ""
+  "chapters/01_introduction.tex" 1783391961 2977 d86038df6364c232b8110b59de7503f6 ""
+  "chapters/02_objectives.tex" 1783392135 2117 70a1d3837bad531d6755fd0a2d2494f2 ""
   "chapters/03_dataset_description.tex" 1783268085 3417 d0a92183d00f6ba12547f88fd4cd9b5e ""
   "chapters/04_dataset_preprocessing.tex" 1783268206 5418 177785b3cfabb10fecd97589dc7ef79a ""
   "chapters/05_cnn_architecture_design.tex" 1783268206 5918 633551ca0ae4fd0ab24292483dc309f8 ""
@@ -151,8 +151,8 @@
   "chapters/14_confusion_matrix.tex" 1783268474 3079 8fa3edfe7f7c2083bae4edb6ec57aee5 ""
   "chapters/15_misclassification_analysis.tex" 1783268474 2968 655ad9b75ee4ef0d2df33628f1dfe208 ""
   "chapters/16_prediction_results.tex" 1783268474 2700 e066b4363faab06e94cf343000d075b9 ""
-  "chapters/17_discussion.tex" 1783265704 3595 20af2d0e57dfba66c4b8fd65f6678c3b ""
-  "chapters/18_conclusion.tex" 1783265753 2410 6a381fea95a363f14728b428601325fe ""
+  "chapters/17_discussion.tex" 1783392181 3644 8b5204b31eaf6756f153b9e8642c5562 ""
+  "chapters/18_conclusion.tex" 1783392216 2337 2c428bfdae206295c89d8a5bc53014f9 ""
   "chapters/19_appendix.tex" 1783391291 354 dca941dbce0beb25344ce3c21202e79c ""
   "cover/cover.tex" 1783354129 1471 fdcdf49217a326ba5cd010b77c2db0b8 ""
   "d:/CNN_Assignment_03/report/main.tex" 1783253972 1645 175e09903bfa83b0000d171669609227 ""
@@ -167,13 +167,13 @@
   "figures/sample_mnist.png" 1783390237 81766 d7cbac6d24e094e005fe2ecfda196080 ""
   "figures/step_2_2_model_summary.png" 1783390295 96624 5da77abfd0ea349d9f7347db281737ce ""
   "figures/training_time_comparison_graph.png" 1783390460 156216 a255ac4895c6b8da46fcb6ebf303f5bd ""
-  "main.aux" 1783391296 13183 be9a7be8dbc8d17ed9128d96bd07e9da "pdflatex"
-  "main.bbl" 1783391294 1793 3d9f5e90b3401548a0cc4ac12e07a5f4 "bibtex main"
-  "main.lof" 1783391296 1414 996e56f6d9fb1f9148866eb0ce511f39 "pdflatex"
-  "main.lot" 1783391296 1304 0995c5234e5da0d607116173ad9ad3ba "pdflatex"
-  "main.out" 1783391296 7966 05be1be3dd33eac8b884d646b3987932 "pdflatex"
+  "main.aux" 1783392219 13183 be9a7be8dbc8d17ed9128d96bd07e9da "pdflatex"
+  "main.bbl" 1783392138 1793 3d9f5e90b3401548a0cc4ac12e07a5f4 "bibtex main"
+  "main.lof" 1783392219 1414 996e56f6d9fb1f9148866eb0ce511f39 "pdflatex"
+  "main.lot" 1783392219 1304 0995c5234e5da0d607116173ad9ad3ba "pdflatex"
+  "main.out" 1783392219 7966 05be1be3dd33eac8b884d646b3987932 "pdflatex"
   "main.tex" 1783253972 1645 175e09903bfa83b0000d171669609227 ""
-  "main.toc" 1783391296 4512 e3749fd6a2421590c9ed4179e3d38749 "pdflatex"
+  "main.toc" 1783392219 4512 e3749fd6a2421590c9ed4179e3d38749 "pdflatex"
   "preamble.tex" 1783354012 3954 14b90c04fb2e85a83680e1d3121dfa56 ""
   (generated)
   "main.aux"
