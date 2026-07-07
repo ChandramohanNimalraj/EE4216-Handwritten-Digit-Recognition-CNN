@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.18)  5 JUL 2026 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.18)  7 JUL 2026 07:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -578,7 +578,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 \openout3 = `main.out'.
 
  (cover/cover.tex
-<figures/cinec_logo.png, id=183, 465.99094pt x 187.45032pt>
+<figures/cinec_logo.png, id=191, 465.99094pt x 187.45032pt>
 File: figures/cinec_logo.png Graphic file (type png)
 <use figures/cinec_logo.png>
 Package pdftex.def Info: figures/cinec_logo.png  used on input line 9.
@@ -616,52 +616,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.30 ...}Comparison of Optimizers}{24}{section.10}
-                                                  % [1]
-Overfull \hbox (3.0pt too wide) detected at line 30
-\T1/ptm/b/n/12 10.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 31
-\T1/ptm/b/n/12 11.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 32
-\T1/ptm/b/n/12 12.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 38
-\T1/ptm/b/n/12 13.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 42
-\T1/ptm/b/n/12 14.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 45
-\T1/ptm/b/n/12 15.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 47
-\T1/ptm/b/n/12 16.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 49
-\T1/ptm/b/n/12 17.0 
- []
-
-
-Overfull \hbox (3.0pt too wide) detected at line 50
-\T1/ptm/b/n/12 18.0 
- []
-
-)
+                                                  % [1])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -683,17 +638,17 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 13
  (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )) [6] (chapters/03_dataset_description.tex
-<figures/sample_mnist.png, id=311, 727.96968pt x 294.34969pt>
+<figures/sample_mnist.png, id=321, 724.58203pt x 291.71484pt>
 File: figures/sample_mnist.png Graphic file (type png)
 <use figures/sample_mnist.png>
 Package pdftex.def Info: figures/sample_mnist.png  used on input line 24.
-(pdftex.def)             Requested size: 385.02547pt x 155.68568pt.
+(pdftex.def)             Requested size: 385.02547pt x 155.01317pt.
  [7 <./figures/sample_mnist.png>]) [8] (chapters/04_dataset_preprocessing.tex [9] [10]) [11] (chapters/05_cnn_architecture_design.tex [12] [13]
-<figures/step_2_2_model_summary.png, id=377, 441.90094pt x 209.28188pt>
+<figures/step_2_2_model_summary.png, id=387, 436.25484pt x 201.00093pt>
 File: figures/step_2_2_model_summary.png Graphic file (type png)
 <use figures/step_2_2_model_summary.png>
 Package pdftex.def Info: figures/step_2_2_model_summary.png  used on input line 104.
-(pdftex.def)             Requested size: 407.66833pt x 193.07813pt.
+(pdftex.def)             Requested size: 407.66833pt x 187.83063pt.
 
 Overfull \hbox (3.9285pt too wide) in paragraph at lines 118--129
  [][] 
@@ -705,72 +660,82 @@ Overfull \hbox (2.15184pt too wide) in paragraph at lines 42--60
  []
 
 [27] (chapters/12_training_validation_results.tex
-<figures/accuracy_comparison_graph.png, id=457, 670.00313pt x 368.87813pt>
+<figures/accuracy_comparison_graph.png, id=467, 665.86266pt x 362.10281pt>
 File: figures/accuracy_comparison_graph.png Graphic file (type png)
 <use figures/accuracy_comparison_graph.png>
 Package pdftex.def Info: figures/accuracy_comparison_graph.png  used on input line 55.
-(pdftex.def)             Requested size: 385.02547pt x 211.97943pt.
+(pdftex.def)             Requested size: 385.02547pt x 209.38437pt.
  [28]
-<figures/loss_comparison_graph.png, id=463, 666.99188pt x 368.1253pt>
+<figures/loss_comparison_graph.png, id=473, 664.35703pt x 367.3725pt>
 File: figures/loss_comparison_graph.png Graphic file (type png)
 <use figures/loss_comparison_graph.png>
 Package pdftex.def Info: figures/loss_comparison_graph.png  used on input line 67.
-(pdftex.def)             Requested size: 385.02547pt x 212.50735pt.
+(pdftex.def)             Requested size: 385.02547pt x 212.90802pt.
  [29 <./figures/accuracy_comparison_graph.png> <./figures/loss_comparison_graph.png>]
-<figures/training_time_comparison_graph.png, id=471, 668.4975pt x 367.3725pt>
+<figures/training_time_comparison_graph.png, id=481, 665.10985pt x 362.10281pt>
 File: figures/training_time_comparison_graph.png Graphic file (type png)
 <use figures/training_time_comparison_graph.png>
 Package pdftex.def Info: figures/training_time_comparison_graph.png  used on input line 79.
-(pdftex.def)             Requested size: 385.02547pt x 211.5963pt.
+(pdftex.def)             Requested size: 385.02547pt x 209.62195pt.
 ) [30 <./figures/training_time_comparison_graph.png>] (chapters/13_accuracy_loss_graphs.tex
-<figures/accuracy_3graph.png, id=479, 526.21594pt x 350.05782pt>
+<figures/accuracy_3graph.png, id=489, 522.82828pt x 345.16454pt>
 File: figures/accuracy_3graph.png Graphic file (type png)
 <use figures/accuracy_3graph.png>
 Package pdftex.def Info: figures/accuracy_3graph.png  used on input line 17.
-(pdftex.def)             Requested size: 385.02547pt x 256.14365pt.
-<figures/loss_3graph.png, id=481, 533.74406pt x 354.57469pt>
+(pdftex.def)             Requested size: 385.02547pt x 254.19585pt.
+<figures/loss_3graph.png, id=491, 529.60359pt x 349.305pt>
 File: figures/loss_3graph.png Graphic file (type png)
 <use figures/loss_3graph.png>
 Package pdftex.def Info: figures/loss_3graph.png  used on input line 31.
-(pdftex.def)             Requested size: 385.02547pt x 255.78592pt.
+(pdftex.def)             Requested size: 385.02547pt x 253.95117pt.
  [31 <./figures/accuracy_3graph.png>]) [32 <./figures/loss_3graph.png>] (chapters/14_confusion_matrix.tex
-<figures/confusion_3matrix.png, id=493, 387.69844pt x 341.02406pt>
+<figures/confusion_3matrix.png, id=503, 384.31078pt x 336.50719pt>
 File: figures/confusion_3matrix.png Graphic file (type png)
 <use figures/confusion_3matrix.png>
 Package pdftex.def Info: figures/confusion_3matrix.png  used on input line 17.
-(pdftex.def)             Requested size: 362.37569pt x 318.757pt.
+(pdftex.def)             Requested size: 362.37569pt x 317.32318pt.
  [33 <./figures/confusion_3matrix.png>]) [34] (chapters/15_misclassification_analysis.tex
-<figures/misclassified_3images.png, id=504, 749.04843pt x 368.1253pt>
+<figures/misclassified_3images.png, id=514, 749.04843pt x 368.1253pt>
 File: figures/misclassified_3images.png Graphic file (type png)
 <use figures/misclassified_3images.png>
 Package pdftex.def Info: figures/misclassified_3images.png  used on input line 15.
 (pdftex.def)             Requested size: 407.66833pt x 200.35188pt.
  [35 <./figures/misclassified_3images.png>]) [36] (chapters/16_prediction_results.tex
-<figures/custom_3predictions.png, id=516, 739.26187pt x 165.61874pt>
+<figures/custom_3predictions.png, id=526, 739.26187pt x 138.8939pt>
 File: figures/custom_3predictions.png Graphic file (type png)
 <use figures/custom_3predictions.png>
 Package pdftex.def Info: figures/custom_3predictions.png  used on input line 19.
-(pdftex.def)             Requested size: 407.66833pt x 91.33066pt.
-) [37 <./figures/custom_3predictions.png>] [38] (chapters/17_discussion.tex [39]) [40] (chapters/18_conclusion.tex) [41] (chapters/19_appendix.tex) (main.bbl) [42] (main.aux)
+(pdftex.def)             Requested size: 407.66833pt x 76.5932pt.
+) [37 <./figures/custom_3predictions.png>] [38] (chapters/17_discussion.tex [39]) [40] (chapters/18_conclusion.tex) [41] (chapters/19_appendix.tex)
+Overfull \hbox (42.9115pt too wide) in paragraph at lines 6--84
+[][][]$\T1/cmtt/m/n/12 https : / / github . com / ChandramohanNimalraj / EE4216-[]Handwritten-[]Digit-[]Recognition-[]CNN$[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--84
+
+ []
+
+[42] (main.bbl) [43] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4A0CD3AE1CEEC43597745B6F992841BB;7667.
+(rerunfilecheck)             Checksum: 05BE1BE3DD33EAC8B884D646B3987932;7966.
  ) 
 Here is how much of TeX's memory you used:
- 16554 strings out of 467691
- 267410 string characters out of 5415471
- 686575 words of memory out of 5000000
- 45155 multiletter control sequences out of 15000+600000
+ 16559 strings out of 467691
+ 267471 string characters out of 5415471
+ 686573 words of memory out of 5000000
+ 45157 multiletter control sequences out of 15000+600000
  681961 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,737b,569s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ASUS\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (43 pages, 1348956 bytes).
+Output written on main.pdf (44 pages, 1348430 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 416 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 667 PDF objects out of 1000 (max. 8388607)
+ 142 named destinations out of 1000 (max. 500000)
+ 432 words of extra memory for PDF output out of 10000 (max. 10000000)
 

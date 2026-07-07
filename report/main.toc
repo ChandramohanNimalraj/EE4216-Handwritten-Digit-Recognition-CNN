@@ -1,13 +1,13 @@
-\contentsline {section}{\numberline {1.0}Introduction}{5}{section.1}%
-\contentsline {section}{\numberline {2.0}Objectives}{6}{section.2}%
-\contentsline {section}{\numberline {3.0}Dataset Description}{7}{section.3}%
-\contentsline {section}{\numberline {4.0}Dataset Preprocessing}{9}{section.4}%
+\contentsline {section}{\numberline {1}Introduction}{5}{section.1}%
+\contentsline {section}{\numberline {2}Objectives}{6}{section.2}%
+\contentsline {section}{\numberline {3}Dataset Description}{7}{section.3}%
+\contentsline {section}{\numberline {4}Dataset Preprocessing}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Loading the MNIST Dataset}{9}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Displaying Sample Images}{9}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Normalization of Pixel Values}{9}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Reshaping the Dataset}{10}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Summary of the Preprocessing Steps}{11}{subsection.4.5}%
-\contentsline {section}{\numberline {5.0}CNN Architecture Design}{12}{section.5}%
+\contentsline {section}{\numberline {5}CNN Architecture Design}{12}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Baseline CNN Architecture}{12}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Layer Description}{12}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Convolution Layer}{12}{subsubsection.5.2.1}%
@@ -18,33 +18,35 @@
 \contentsline {subsection}{\numberline {5.3}Model Compilation}{14}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Baseline CNN Architecture Summary}{14}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Architecture Variations}{14}{subsection.5.5}%
-\contentsline {section}{\numberline {6.0}Experimental Setup}{16}{section.6}%
+\contentsline {section}{\numberline {6}Experimental Setup}{16}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Software Environment}{16}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Hardware Environment}{16}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Training Configuration}{17}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Evaluation Metrics}{17}{subsection.6.4}%
 \contentsline {subsection}{\numberline {6.5}Experimental Procedure}{18}{subsection.6.5}%
-\contentsline {section}{\numberline {7.0}Comparison of CNN Architectures}{19}{section.7}%
-\contentsline {section}{\numberline {8.0}Comparison of Kernel Sizes}{20}{section.8}%
-\contentsline {section}{\numberline {9.0}Comparison of Convolution Layers}{22}{section.9}%
-\contentsline {section}{\numberline {10.0}Comparison of Optimizers}{24}{section.10}%
-\contentsline {section}{\numberline {11.0}Comparison of Activation Functions}{26}{section.11}%
-\contentsline {section}{\numberline {12.0}Training and Validation Results}{28}{section.12}%
+\contentsline {section}{\numberline {7}Comparison of CNN Architectures}{19}{section.7}%
+\contentsline {section}{\numberline {8}Comparison of Kernel Sizes}{20}{section.8}%
+\contentsline {section}{\numberline {9}Comparison of Convolution Layers}{22}{section.9}%
+\contentsline {section}{\numberline {10}Comparison of Optimizers}{24}{section.10}%
+\contentsline {section}{\numberline {11}Comparison of Activation Functions}{26}{section.11}%
+\contentsline {section}{\numberline {12}Training and Validation Results}{28}{section.12}%
 \contentsline {subsection}{\numberline {12.1}Overall Performance Comparison}{28}{subsection.12.1}%
 \contentsline {subsection}{\numberline {12.2}Accuracy Comparison}{28}{subsection.12.2}%
 \contentsline {subsection}{\numberline {12.3}Loss Comparison}{29}{subsection.12.3}%
 \contentsline {subsection}{\numberline {12.4}Training Time Comparison}{30}{subsection.12.4}%
 \contentsline {subsection}{\numberline {12.5}Discussion}{30}{subsection.12.5}%
-\contentsline {section}{\numberline {13.0}Accuracy and Loss Graphs}{31}{section.13}%
+\contentsline {section}{\numberline {13}Accuracy and Loss Graphs}{31}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Training and Validation Accuracy}{31}{subsection.13.1}%
 \contentsline {subsection}{\numberline {13.2}Training and Validation Loss}{32}{subsection.13.2}%
 \contentsline {subsection}{\numberline {13.3}Learning Behaviour}{32}{subsection.13.3}%
-\contentsline {section}{\numberline {14.0}Confusion Matrix Analysis}{33}{section.14}%
+\contentsline {section}{\numberline {14}Confusion Matrix Analysis}{33}{section.14}%
 \contentsline {subsection}{\numberline {14.1}Confusion Matrix}{33}{subsection.14.1}%
 \contentsline {subsection}{\numberline {14.2}Performance Interpretation}{34}{subsection.14.2}%
-\contentsline {section}{\numberline {15.0}Misclassification Analysis}{35}{section.15}%
+\contentsline {section}{\numberline {15}Misclassification Analysis}{35}{section.15}%
 \contentsline {subsection}{\numberline {15.1}Examples of Misclassified Digits}{35}{subsection.15.1}%
-\contentsline {section}{\numberline {16.0}Prediction Results}{37}{section.16}%
+\contentsline {section}{\numberline {16}Prediction Results}{37}{section.16}%
 \contentsline {subsection}{\numberline {16.1}Prediction Results}{37}{subsection.16.1}%
-\contentsline {section}{\numberline {17.0}Discussion}{39}{section.17}%
-\contentsline {section}{\numberline {18.0}Conclusion}{41}{section.18}%
+\contentsline {section}{\numberline {17}Discussion}{39}{section.17}%
+\contentsline {section}{\numberline {18}Conclusion}{41}{section.18}%
+\contentsline {section}{\numberline {19}Appendix}{42}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Appendix A: GitHub Repository}{42}{subsection.19.1}%
